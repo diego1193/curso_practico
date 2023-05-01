@@ -7,13 +7,26 @@
     <title>Curso de  DOM basico - Curso Practico de Javascript</title>
 </head>
 <body>
-    <h1 class="verde" pantalla="platzilg">Manipulacion de DOM basico</h1> <!--pantalla es atributo de la etiqueta -->
-    <p> esto es un parrafo normal </p>
-    <p class="new">Esto es un Párrafo</p>
-    <p id="new_id">Esto es un parrafo de la clase</p>
 
-    <input placeholder="Escribe nombre"/>
+    <form id="form"> <!--El formulario agarra el ultimo boton, como submit, o evento submit-->
+        <input type="number" id="calculo1" placeholder="Escribe nombre"/>
+        <!--Atributo onchange="" -> es parecido al onclick, al momento de dar click y terminan de escribir se ejecuta un Js-->
+        <input type="number" onchange="console.log('Cambio el input')" id="calculo2" placeholder="Escribe algo"/> 
+    
+        <!-- /////////////////////////Una de las formas de agregar eventos /////////////////////////////-->
+        <!--Atributo onclick="" -> es parecido al onclick, al momento de dar click se ejecuta un Js-->
+        <!--onchange o onsumbit -> Averiguar eventos-->
+        <!--<button id="bntCalcular" onclick="btnOnClick()">Calcular</button>-->
+    
+        <!-- /////////////////////////Una de las formas de crear eventos mucho mas limpia //////////////////////////////////-->
+        <!--<button id="btnCalcular">Calcular</button>-->
+        <button id="btnCalcular" type="button">Calcular</button>
+    </form>
 
-    <script src="./main.js"></script>
+
+
+    <p id="resultado"></p>
+
+    <script src="./main_evento.js"></script>
 </body>
 </html>
