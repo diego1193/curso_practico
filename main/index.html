@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de  DOM basico - Curso Practico de Javascript</title>
+    <style>
+        .droptarget {
+          width: 100px; 
+          height: 35px;
+          padding: 10px;
+          border: 1px solid black;
+        }
+        </style>
 </head>
 <body>
 
@@ -22,6 +30,26 @@
         <!--<button id="btnCalcular">Calcular</button>-->
         <button id="btnCalcular" type="button">Calcular</button>
     </form>
+    <div class="class-div">
+        <p>Este parrafo va en DIV</p>
+    </div>
+
+    <!-- Insertando imagen, video o otra pagina dentro de esta pagina-->
+    <iframe width="900" height="700" allow="fullscreen" name="marco1" >
+    </iframe>
+    <a href="http://globalmentoring.com.mx" type="boton" target="marco1">ASSSSS</a>
+    
+    <p id="p_iframe"></p>
+
+    <!-- Moviendo texto-->
+    <div class="droptarget">
+        <p draggable="true" id="dragtarget">Drag me!</p>
+      </div>
+      
+      <p id="demo"></p>
+      
+      <div class="droptarget"></div>
+
 
 
 
